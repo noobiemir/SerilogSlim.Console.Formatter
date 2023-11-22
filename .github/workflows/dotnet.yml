@@ -33,7 +33,7 @@ jobs:
       run: dotnet restore
 
     - name: Build Solution
-      run: 'dotnet build --no-restore --configuration Release -p:Version="${{env.BUILD_VERSION}}" -p:InformationalVersion="${{env.BUILD_VERSION}}+${{github.sha}}"'
+      run: 'dotnet build --no-restore --configuration Release -p:Version="${{ github.event.inputs.tag_name }}" -p:InformationalVersion=""${{ github.event.inputs.tag_name }}"+${{github.sha}}"'
 
     - name: Create Packages
       if: success() && github.event_name != 'pull_request'
