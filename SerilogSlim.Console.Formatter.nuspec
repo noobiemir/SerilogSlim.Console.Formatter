@@ -16,7 +16,7 @@
 	</metadata>
 
 	<files>
-		<file src="./src/bin/$configuration$/net8.0/SerilogSlim.dll" target="lib/net8.0" />
+		<file src="./src/bin/$configuration$/net8/SerilogSlim.dll" target="lib/net8" />
 		<file src="./src/bin/$configuration$/net6/SerilogSlim.dll" target="lib/net6" />
 	</files>
 </package>
