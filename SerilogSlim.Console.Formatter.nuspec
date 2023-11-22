@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+	<metadata>
+		<id>SerilogSlim.Console.Formatter</id>
+		<version>1.0.0</version>
+		<authors>Serilog Contributors</authors>
+		<owners>Serilog Contributors</owners>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<license type="expression">Apache-2.0</license>
+		<projectUrl>https://github.com/noobiemir/SerilogSlim.Console.Formatter</projectUrl>
+		<repository type="git" url="https://github.com/noobiemir/SerilogSlim.Console.Formatter" />
+		<description>Simple .NET logging</description>
+		<copyright>Copyright © 2023 Serilog</copyright>
+		<language>en-US</language>
+		<tags>typescript</tags>
+	</metadata>
+
+	<files>
+		<file src="./src/bin/$configuration$/net8.0/SerilogSlim.dll" target="lib/net8.0" />
+		<file src="./src/bin/$configuration$/net6/SerilogSlim.dll" target="lib/net6" />
+	</files>
+</package>
